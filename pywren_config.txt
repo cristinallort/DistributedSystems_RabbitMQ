@@ -1,0 +1,15 @@
+pywren: 
+    storage_bucket: <BUCKET_NAME>
+
+ibm_cf:
+    endpoint    : <HOST>
+    namespace   : <NAMESPACE>
+    api_key     : <API_KEY>
+
+ibm_cos:
+    endpoint   : <REGION_ENDPOINT>
+    access_key : <ACCESS_KEY>  
+    secret_key : <SECRET_KEY>  
+
+rabbitmq:
+    amqp_url 	: <RABBIT_AMQP_URL>  
