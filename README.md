@@ -5,7 +5,7 @@ Foundations of distributed systems: Playing out with serverless functions in the
 Catalina Vilsan and Cristina Llort.
 
 ## How it works?
-1. First of all we call the leader (my_master_function), whose queue (master_queue) is implemented by using a Direct RabbitMQ queue. 
+1. First of all we call the leader (my_master_function), who declares master_queue. 
 2. Then, we have implemented one function (my_function_map) that is called 10, 20, 50, 80, ... times. One call for every mapper.
 3. Every mapper will send a petition to the leader.
 4. The leader will read the petitions and will decide which function is allowed to write in each moment (mutual exclusion). 
