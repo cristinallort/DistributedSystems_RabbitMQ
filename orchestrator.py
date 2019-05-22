@@ -62,8 +62,6 @@ class callback_mapper:
 def connectar():
 	pw_config = json.loads(os.environ.get('PYWREN_CONFIG', ''))
 	url = pw_config['rabbitmq']['amqp_url']
-	print (url)
-	#url = 'amqp://gwhjzdvn:DQqkzbddhQieyOCSsPc70TLrRk8Jffdv@caterpillar.rmq.cloudamqp.com/gwhjzdvn'
 	params = pika.URLParameters(url)
 	connection = pika.BlockingConnection(params)
 	return connection
