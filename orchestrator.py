@@ -1,4 +1,3 @@
-import ibm_cf_connector
 import pywren_ibm_cloud as pywren
 import random
 import sys
