@@ -20,4 +20,3 @@ Catalina Vilsan and Cristina Llort.
 3. Execute orchestrator.py in your console(Linux):
 python3 orchestrator.py "number_of_mappers"
 
-## Architecture and implementation
